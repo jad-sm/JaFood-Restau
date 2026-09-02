@@ -1,0 +1,794 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore JaFood's contemporary Lebanese menu in Hamra, Beirut, organized by category, and request your table online."
+    />
+    <meta name="theme-color" content="#0c1423" />
+    <title>JaFood — Menu & Reservations | Hamra, Beirut</title>
+    <link rel="icon" href="assets/jafood-mark.svg" type="image/svg+xml" />
+    <link rel="preload" href="assets/images/jafood-hero.webp" as="image" type="image/webp" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "JaFood",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Hamra, Beirut",
+          "addressCountry": "LB"
+        },
+        "servesCuisine": ["Lebanese", "Contemporary Lebanese"],
+        "priceRange": "$$",
+        "openingHours": "Mo-Su 12:00-00:00",
+        "acceptsReservations": true
+      }
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#menu" data-en="Skip to the menu" data-fr="Aller directement au menu">
+      Skip to the menu
+    </a>
+
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="JaFood home">
+        <span class="brand__mark" aria-hidden="true">JF</span>
+        <span class="brand__text">
+          <strong>JaFood</strong>
+          <small>Hamra · Beirut</small>
+        </span>
+      </a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        aria-label="Open navigation"
+      >
+        <span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="#menu" data-en="Menu" data-fr="La carte">Menu</a>
+        <a href="#categories" data-en="Categories" data-fr="Catégories">Categories</a>
+        <a href="#reservation" data-en="Reservations" data-fr="Réservations">Reservations</a>
+        <a href="#location" data-en="Location" data-fr="Adresse">Location</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="language-switch" role="group" aria-label="Language">
+          <button class="language-button is-active" type="button" data-language="en" aria-pressed="true">EN</button>
+          <span aria-hidden="true"></span>
+          <button class="language-button" type="button" data-language="fr" aria-pressed="false">FR</button>
+        </div>
+        <a class="button button--header" href="#reservation" data-en="Book a table" data-fr="Réserver une table">
+          Book a table
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__content reveal">
+          <p class="overline" data-en="Contemporary Lebanese dining" data-fr="Cuisine libanaise contemporaine">
+            Contemporary Lebanese dining
+          </p>
+          <h1 id="hero-title">
+            <span data-en="Good food." data-fr="La bonne cuisine.">Good food.</span>
+            <em data-en="Beirut energy." data-fr="L'énergie de Beyrouth.">Beirut energy.</em>
+          </h1>
+          <p class="hero__intro" data-en="A modern Lebanese table in the heart of Hamra — from generous mezze and charcoal grills to fresh juices made to order." data-fr="Une table libanaise moderne au cœur de Hamra — des mezzés généreux et grillades au charbon jusqu'aux jus frais préparés minute.">
+            A modern Lebanese table in the heart of Hamra — from generous mezze and charcoal grills to fresh juices made to order.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#menu" data-en="Explore the menu" data-fr="Découvrir la carte">
+              Explore the menu
+            </a>
+            <a class="button button--ghost" href="#reservation" data-en="Reserve online" data-fr="Réserver en ligne">
+              Reserve online
+            </a>
+          </div>
+
+          <dl class="hero__details">
+            <div>
+              <dt data-en="Open daily" data-fr="Ouvert tous les jours">Open daily</dt>
+              <dd>12:00 — 00:00</dd>
+            </div>
+            <div>
+              <dt data-en="Location" data-fr="Adresse">Location</dt>
+              <dd>Hamra, Beirut</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero__visual reveal" data-delay="100">
+          <img
+            src="assets/images/jafood-hero.webp"
+            alt="Contemporary Lebanese sharing table at JaFood"
+            data-alt-en="Contemporary Lebanese sharing table at JaFood"
+            data-alt-fr="Table libanaise contemporaine à partager chez JaFood"
+          />
+          <div class="hero__seal" aria-hidden="true">
+            <span>HAMRA</span>
+            <strong>JF</strong>
+            <span>BEIRUT</span>
+          </div>
+          <div class="hero__note">
+            <span class="status-dot" aria-hidden="true"></span>
+            <div>
+              <small data-en="Now serving" data-fr="Service en cours">Now serving</small>
+              <strong data-en="Lunch & dinner" data-fr="Déjeuner & dîner">Lunch & dinner</strong>
+            </div>
+          </div>
+        </div>
+
+        <nav class="quick-categories" aria-label="Menu categories">
+          <a href="#breakfast" data-en="Breakfast" data-fr="Petit-déjeuner">Breakfast</a>
+          <a href="#cold-mezze" data-en="Cold mezze" data-fr="Mezzés froids">Cold mezze</a>
+          <a href="#hot-mezze" data-en="Hot mezze" data-fr="Mezzés chauds">Hot mezze</a>
+          <a href="#grills" data-en="Grills" data-fr="Grillades">Grills</a>
+          <a href="#fresh-juices" data-en="Fresh juices" data-fr="Jus frais">Fresh juices</a>
+          <a href="#desserts" data-en="Desserts" data-fr="Desserts">Desserts</a>
+        </nav>
+      </section>
+
+      <section class="menu-layout" id="menu">
+        <aside class="category-sidebar" id="categories" aria-label="Browse menu categories">
+          <div class="category-sidebar__inner">
+            <p class="overline overline--dark" data-en="Browse by nature" data-fr="Parcourir par nature">
+              Browse by nature
+            </p>
+            <h2 data-en="Menu categories" data-fr="Catégories du menu">Menu categories</h2>
+            <nav class="category-nav" aria-label="Menu category index">
+              <a class="category-link is-active" href="#breakfast" data-category-link="breakfast">
+                <span>01</span><strong data-en="Breakfast & Brunch" data-fr="Petit-déjeuner & Brunch">Breakfast & Brunch</strong>
+              </a>
+              <a class="category-link" href="#cold-mezze" data-category-link="cold-mezze">
+                <span>02</span><strong data-en="Cold Mezze" data-fr="Mezzés froids">Cold Mezze</strong>
+              </a>
+              <a class="category-link" href="#hot-mezze" data-category-link="hot-mezze">
+                <span>03</span><strong data-en="Hot Mezze" data-fr="Mezzés chauds">Hot Mezze</strong>
+              </a>
+              <a class="category-link" href="#grills" data-category-link="grills">
+                <span>04</span><strong data-en="Grills & Mains" data-fr="Grillades & Plats">Grills & Mains</strong>
+              </a>
+              <a class="category-link" href="#sandwiches" data-category-link="sandwiches">
+                <span>05</span><strong data-en="Sandwiches" data-fr="Sandwichs">Sandwiches</strong>
+              </a>
+              <a class="category-link" href="#desserts" data-category-link="desserts">
+                <span>06</span><strong data-en="Desserts" data-fr="Desserts">Desserts</strong>
+              </a>
+              <a class="category-link" href="#fresh-juices" data-category-link="fresh-juices">
+                <span>07</span><strong data-en="Fresh Juices" data-fr="Jus frais">Fresh Juices</strong>
+              </a>
+              <a class="category-link" href="#hot-drinks" data-category-link="hot-drinks">
+                <span>08</span><strong data-en="Hot Drinks" data-fr="Boissons chaudes">Hot Drinks</strong>
+              </a>
+            </nav>
+
+            <div class="sidebar-card">
+              <span aria-hidden="true">✦</span>
+              <p data-en="Planning dinner tonight? Reserve your table in less than a minute." data-fr="Vous dînez ce soir ? Réservez votre table en moins d'une minute.">
+                Planning dinner tonight? Reserve your table in less than a minute.
+              </p>
+              <a href="#reservation" data-en="Reserve now →" data-fr="Réserver maintenant →">Reserve now →</a>
+            </div>
+          </div>
+        </aside>
+
+        <div class="menu-catalog">
+          <header class="catalog-heading reveal">
+            <div>
+              <p class="overline overline--dark" data-en="JaFood · Hamra" data-fr="JaFood · Hamra">JaFood · Hamra</p>
+              <h2 data-en="The Menu" data-fr="La Carte">The Menu</h2>
+            </div>
+            <div class="catalog-heading__note">
+              <p data-en="Every item is listed under its exact category, making the menu quick and effortless to browse." data-fr="Chaque produit est placé dans sa catégorie exacte pour rendre la carte claire et facile à parcourir.">
+                Every item is listed under its exact category, making the menu quick and effortless to browse.
+              </p>
+              <span data-en="Prices in USD · VAT included" data-fr="Prix en USD · TVA incluse">Prices in USD · VAT included</span>
+            </div>
+          </header>
+
+          <!-- ============================================================
+               HOW TO ADD A PRODUCT
+               Copy one complete <article class="menu-product"> block,
+               paste it INSIDE the correct category, then edit:
+               data-en, data-fr, description, price and optional image.
+               Full instructions are included in README.md.
+               ============================================================ -->
+
+          <section class="menu-category reveal" id="breakfast" data-category-section="breakfast">
+            <header class="menu-category__header">
+              <span class="menu-category__number">01</span>
+              <div>
+                <p data-en="Morning plates" data-fr="Assiettes du matin">Morning plates</p>
+                <h3 data-en="Breakfast & Brunch" data-fr="Petit-déjeuner & Brunch">Breakfast & Brunch</h3>
+              </div>
+              <span class="menu-category__count" data-en="3 items" data-fr="3 produits">3 items</span>
+            </header>
+            <div class="menu-products">
+              <article class="menu-product" data-menu-product>
+                <div class="menu-product__copy">
+                  <div class="menu-product__title">
+                    <h4 data-en="Lebanese Breakfast Board" data-fr="Planche du petit-déjeuner libanais">Lebanese Breakfast Board</h4>
+                    <span class="product-badge" data-en="For two" data-fr="Pour deux">For two</span>
+                  </div>
+                  <p data-en="Labneh, akkawi, olives, tomatoes, cucumbers, zaatar, eggs and warm bread." data-fr="Labneh, akkawi, olives, tomates, concombres, zaatar, œufs et pain chaud.">
+                    Labneh, akkawi, olives, tomatoes, cucumbers, zaatar, eggs and warm bread.
+                  </p>
+                </div>
+                <strong class="menu-product__price">$18</strong>
+              </article>
+              <article class="menu-product" data-menu-product>
+                <div class="menu-product__copy">
+                  <div class="menu-product__title">
+                    <h4 data-en="Zaatar & Labneh Manoushe" data-fr="Man'ouché zaatar & labneh">Zaatar & Labneh Manoushe</h4>
+                    <span class="diet-dot" title="Vegetarian">V</span>
+                  </div>
+                  <p data-en="Stone-baked dough, mountain zaatar, creamy labneh, tomato and fresh mint." data-fr="Pâte cuite sur pierre, zaatar de montagne, labneh crémeux, tomate et menthe fraîche.">
+                    Stone-baked dough, mountain zaatar, creamy labneh, tomato and fresh mint.
+                  </p>
+                </div>
+                <strong class="menu-product__price">$7</strong>
+              </article>
+              <article class="menu-product" data-menu-product>
+                <div class="menu-product__copy">
+                  <div class="menu-product__title">
+                    <h4 data-en="Beiruti Shakshuka" data-fr="Shakshuka beiruti">Beiruti Shakshuka</h4>
+                  </div>
+                  <p data-en="Baked eggs, slow-cooked tomato, peppers, cumin, feta and toasted sourdough." data-fr="Œufs au four, tomate mijotée, poivrons, cumin, feta et pain au levain grillé.">
+                    Baked eggs, slow-cooked tomato, peppers, cumin, feta and toasted sourdough.
+                  </p>
+                </div>
+                <strong class="menu-product__price">$11</strong>
+              </article>
+            </div>
+          </section>
+
+          <section class="menu-category reveal" id="cold-mezze" data-category-section="cold-mezze">
+            <header class="menu-category__header">
+              <span class="menu-category__number">02</span>
+              <div>
+                <p data-en="Made for sharing" data-fr="À partager">Made for sharing</p>
+                <h3 data-en="Cold Mezze" data-fr="Mezzés froids">Cold Mezze</h3>
+              </div>
+              <span class="menu-category__count" data-en="4 items" data-fr="4 produits">4 items</span>
+            </header>
+            <div class="menu-products">
+              <article class="menu-product menu-product--photo" data-menu-product>
+                <img src="assets/images/hummus.webp" alt="JaFood hummus" data-alt-en="JaFood hummus" data-alt-fr="Houmous JaFood" loading="lazy" />
+                <div class="menu-product__copy">
+                  <div class="menu-product__title">
+                    <h4 data-en="JaFood Hummus" data-fr="Houmous JaFood">JaFood Hummus</h4>
+                    <span class="product-badge" data-en="Signature" data-fr="Signature">Signature</span>
+                  </div>
+                  <p data-en="Chickpeas, smoked tahini, lemon, pine nuts and Chouf olive oil." data-fr="Pois chiches, tahini fumé, citron, pignons et huile d'olive du Chouf.">
+                    Chickpeas, smoked tahini, lemon, pine nuts and Chouf olive oil.
+                  </p>
+                </div>
+                <strong class="menu-product__price">$8</strong>
+              </article>
+              <article class="menu-product" data-menu-product>
+                <div class="menu-product__copy">
+                  <div class="menu-product__title">
+                    <h4 data-en="Smoked Moutabal" data-fr="Moutabal fumé">Smoked Moutabal</h4>
+                    <span class="diet-dot" title="Vegan">VG</span>
+                  </div>
+                  <p data-en="Fire-roasted eggplant, tahini, lemon, garlic and pomegranate." data-fr="Aubergine rôtie au feu, tahini, citron, ail et grenade.">
+                    Fire-roasted eggplant, tahini, lemon, garlic and pomegranate.
+                  </p>
+                </div>
+                <strong class="menu-product__price">$8.5</strong>
+              </article>
+              <article class="menu-product" data-menu-product>
+                <div class="menu-product__copy">
+                  <div class="menu-product__title">
+                    <h4 data-en="Garden Tabbouleh" data-fr="Taboulé du jardin">Garden Tabbouleh</h4>
+                    <span class="diet-dot" title="Vegan">VG</span>
+                  </div>
+                  <p data-en="Parsley, tomato, mint, fine bulgur, lemon and extra-virgin olive oil." data-fr="Persil, tomate, menthe, boulgour fin, citron et huile d'olive extra-vierge.">
+                    Parsley, tomato, mint, fine bulgur, lemon and extra-virgin olive oil.
+                  </p>
+                </div>
+                <strong class="menu-product__price">$9</strong>
+              </article>
+              <article class="menu-product menu-product--photo" data-menu-product>
+                <img src="assets/images/fattoush.webp" alt="Pomegranate fattoush" data-alt-en="Pomegranate fattoush" data-alt-fr="Fattoush à la grenade" loading="lazy" />
+                <div class="menu-product__copy">
+                  <div class="menu-product__title">
+                    <h4 data-en="Pomegranate Fattoush" data-fr="Fattoush à la grenade">Pomegranate Fattoush</h4>
+                  </div>
+                  <p data-en="Crisp vegetables, herbs, sumac pita and pomegranate molasses." data-fr="Légumes croquants, herbes, pain au sumac et mélasse de grenade.">
+                    Crisp vegetables, herbs, sumac pita and pomegranate molasses.
+                  </p>
+                </div>
+                <strong class="menu-product__price">$9</strong>
+              </article>
+            </div>
+          </section>
+
+          <section class="menu-category reveal" id="hot-mezze" data-category-section="hot-mezze">
+            <header class="menu-category__header">
+              <span class="menu-category__number">03</span>
+              <div>
+                <p data-en="From the kitchen" data-fr="Sortis de la cuisine">From the kitchen</p>
+                <h3 data-en="Hot Mezze" data-fr="Mezzés chauds">Hot Mezze</h3>
+              </div>
+              <span class="menu-category__count" data-en="4 items" data-fr="4 produits">4 items</span>
+            </header>
+            <div class="menu-products">
+              <article class="menu-product" data-menu-product>
+                <div class="menu-product__copy">
+                  <div class="menu-product__title">
+                    <h4 data-en="Truffle Rakakat" data-fr="Rakakat à la truffe">Truffle Rakakat</h4>
+                    <span class="product-badge" data-en="New" data-fr="Nouveau">New</span>
+                  </div>
+                  <p data-en="Crisp pastry, akkawi, mozzarella, black truffle and thyme honey." data-fr="Pâte croustillante, akkawi, mozzarella, truffe noire et miel au thym.">
+                    Crisp pastry, akkawi, mozzarella, black truffle and thyme honey.
+                  </p>
+                </div>
+                <strong class="menu-product__price">$10</strong>
+              </article>
+              <article class="menu-product" data-menu-product>
+                <div class="menu-product__copy">
+                  <div class="menu-product__title">
+                    <h4 data-en="Kibbeh Bites" data-fr="Bouchées de kebbé">Kibbeh Bites</h4>
+                  </div>
+                  <p data-en="Crisp bulgur shells, spiced beef, pine nuts and cool yogurt." data-fr="Coques croustillantes au boulgour, bœuf épicé, pignons et yaourt frais.">
+                    Crisp bulgur shells, spiced beef, pine nuts and cool yogurt.
+                  </p>
+                </div>
+                <strong class="menu-product__price">$11</strong>
+              </article>
+              <article class="menu-product" data-menu-product>
+                <div class="menu-product__copy">
+                  <div class="menu-product__title">
+                    <h4 data-en="Batata Harra" data-fr="Batata harra">Batata Harra</h4>
+                    <span class="diet-dot" title="Vegan">VG</span>
+                  </div>
+                  <p data-en="Crisp potatoes, coriander, garlic, chili and fresh lemon." data-fr="Pommes de terre croustillantes, coriandre, ail, piment et citron frais.">
+                    Crisp potatoes, coriander, garlic, chili and fresh lemon.
+                  </p>
+                </div>
+                <strong class="menu-product__price">$8</strong>
+              </article>
+              <article class="menu-product" data-menu-product>
+                <div class="menu-product__copy">
+                  <div class="menu-product__title">
+                    <h4 data-en="Grilled Halloumi" data-fr="Halloumi grillé">Grilled Halloumi</h4>
+                    <span class="diet-dot" title="Vegetarian">V</span>
+                  </div>
+                  <p data-en="Cypriot halloumi, figs, arugula, sesame and date molasses." data-fr="Halloumi chypriote, figues, roquette, sésame et mélasse de dattes.">
+                    Cypriot halloumi, figs, arugula, sesame and date molasses.
+                  </p>
+                </div>
+                <strong class="menu-product__price">$12</strong>
+              </article>
+            </div>
+          </section>
+
+          <section class="menu-category reveal" id="grills" data-category-section="grills">
+            <header class="menu-category__header">
+              <span class="menu-category__number">04</span>
+              <div>
+                <p data-en="Cooked over charcoal" data-fr="Cuisson au charbon">Cooked over charcoal</p>
+                <h3 data-en="Grills & Mains" data-fr="Grillades & Plats">Grills & Mains</h3>
+              </div>
+              <span class="menu-category__count" data-en="4 items" data-fr="4 produits">4 items</span>
+            </header>
+            <div class="menu-products">
+              <article class="menu-product menu-product--photo" data-menu-product>
+                <img src="assets/images/tawook.webp" alt="Charcoal shish tawook" data-alt-en="Charcoal shish tawook" data-alt-fr="Shish tawook au charbon" loading="lazy" />
+                <div class="menu-product__copy">
+                  <div class="menu-product__title">
+                    <h4 data-en="Charcoal Tawook" data-fr="Tawook au charbon">Charcoal Tawook</h4>
+                    <span class="product-badge" data-en="Popular" data-fr="Populaire">Popular</span>
+                  </div>
+                  <p data-en="24-hour marinated chicken, house toum, grilled tomato and pickles." data-fr="Poulet mariné 24 h, toum maison, tomate grillée et pickles.">
+                    24-hour marinated chicken, house toum, grilled tomato and pickles.
+                  </p>
+                </div>
+                <strong class="menu-product__price">$18</strong>
+              </article>
+              <article class="menu-product menu-product--photo" data-menu-product>
+                <img src="assets/images/kafta.webp" alt="Hamra kafta skewers" data-alt-en="Hamra kafta skewers" data-alt-fr="Brochettes de kafta Hamra" loading="lazy" />
+                <div class="menu-product__copy">
+                  <div class="menu-product__title">
+                    <h4 data-en="Hamra Kafta" data-fr="Kafta de Hamra">Hamra Kafta</h4>
+                  </div>
+                  <p data-en="Beef, parsley, seven spice, sumac onions and roasted tomato." data-fr="Bœuf, persil, sept épices, oignons au sumac et tomate rôtie.">
+                    Beef, parsley, seven spice, sumac onions and roasted tomato.
+                  </p>
+                </div>
+                <strong class="menu-product__price">$19</strong>
+              </article>
+              <article class="menu-product" data-menu-product>
+                <div class="menu-product__copy">
+                  <div class="menu-product__title">
+                    <h4 data-en="JaFood Mixed Grill" data-fr="Grillade mixte JaFood">JaFood Mixed Grill</h4>
+                    <span class="product-badge" data-en="Chef's pick" data-fr="Choix du chef">Chef's pick</span>
+                  </div>
+                  <p data-en="Tawook, kafta and beef cubes with toum, hummus, fries and flatbread." data-fr="Tawook, kafta et cubes de bœuf avec toum, houmous, frites et pain plat.">
+                    Tawook, kafta and beef cubes with toum, hummus, fries and flatbread.
+                  </p>
+                </div>
+                <strong class="menu-product__price">$25</strong>
+              </article>
+              <article class="menu-product" data-menu-product>
+                <div class="menu-product__copy">
+                  <div class="menu-product__title">
+                    <h4 data-en="Sumac Lamb Chops" data-fr="Côtelettes d'agneau au sumac">Sumac Lamb Chops</h4>
+                  </div>
+                  <p data-en="Charred lamb chops, sumac jus, roasted potato and herb salad." data-fr="Côtelettes d'agneau grillées, jus au sumac, pomme de terre rôtie et salade d'herbes.">
+                    Charred lamb chops, sumac jus, roasted potato and herb salad.
+                  </p>
+                </div>
+                <strong class="menu-product__price">$27</strong>
+              </article>
+            </div>
+          </section>
+
+          <section class="menu-category reveal" id="sandwiches" data-category-section="sandwiches">
+            <header class="menu-category__header">
+              <span class="menu-category__number">05</span>
+              <div>
+                <p data-en="Quick & generous" data-fr="Rapides & généreux">Quick & generous</p>
+                <h3 data-en="Sandwiches" data-fr="Sandwichs">Sandwiches</h3>
+              </div>
+              <span class="menu-category__count" data-en="3 items" data-fr="3 produits">3 items</span>
+            </header>
+            <div class="menu-products">
+              <article class="menu-product" data-menu-product>
+                <div class="menu-product__copy">
+                  <div class="menu-product__title">
+                    <h4 data-en="Tawook Saj Wrap" data-fr="Wrap saj au tawook">Tawook Saj Wrap</h4>
+                  </div>
+                  <p data-en="Charcoal chicken, toum, pickles, fries and toasted saj bread." data-fr="Poulet au charbon, toum, pickles, frites et pain saj grillé.">
+                    Charcoal chicken, toum, pickles, fries and toasted saj bread.
+                  </p>
+                </div>
+                <strong class="menu-product__price">$11</strong>
+              </article>
+              <article class="menu-product" data-menu-product>
+                <div class="menu-product__copy">
+                  <div class="menu-product__title">
+                    <h4 data-en="Crisp Kafta Arayes" data-fr="Arayes kafta croustillants">Crisp Kafta Arayes</h4>
+                  </div>
+                  <p data-en="Spiced kafta in crisp pita, tomato, parsley and yogurt tahini." data-fr="Kafta épicée dans un pita croustillant, tomate, persil et yaourt au tahini.">
+                    Spiced kafta in crisp pita, tomato, parsley and yogurt tahini.
+                  </p>
+                </div>
+                <strong class="menu-product__price">$12</strong>
+              </article>
+              <article class="menu-product" data-menu-product>
+                <div class="menu-product__copy">
+                  <div class="menu-product__title">
+                    <h4 data-en="Halloumi Green Wrap" data-fr="Wrap vert au halloumi">Halloumi Green Wrap</h4>
+                    <span class="diet-dot" title="Vegetarian">V</span>
+                  </div>
+                  <p data-en="Grilled halloumi, cucumber, mint, tomato, arugula and zaatar mayo." data-fr="Halloumi grillé, concombre, menthe, tomate, roquette et mayonnaise au zaatar.">
+                    Grilled halloumi, cucumber, mint, tomato, arugula and zaatar mayo.
+                  </p>
+                </div>
+                <strong class="menu-product__price">$10</strong>
+              </article>
+            </div>
+          </section>
+
+          <section class="menu-category reveal" id="desserts" data-category-section="desserts">
+            <header class="menu-category__header">
+              <span class="menu-category__number">06</span>
+              <div>
+                <p data-en="A sweet finish" data-fr="Pour finir en douceur">A sweet finish</p>
+                <h3 data-en="Desserts" data-fr="Desserts">Desserts</h3>
+              </div>
+              <span class="menu-category__count" data-en="3 items" data-fr="3 produits">3 items</span>
+            </header>
+            <div class="menu-products">
+              <article class="menu-product menu-product--photo" data-menu-product>
+                <img src="assets/images/mouhallabieh.webp" alt="Mouhallabieh with pistachio" data-alt-en="Mouhallabieh with pistachio" data-alt-fr="Mouhallabieh à la pistache" loading="lazy" />
+                <div class="menu-product__copy">
+                  <div class="menu-product__title">
+                    <h4 data-en="Mouhallabieh Cloud" data-fr="Nuage de mouhallabieh">Mouhallabieh Cloud</h4>
+                    <span class="product-badge" data-en="Signature" data-fr="Signature">Signature</span>
+                  </div>
+                  <p data-en="Light milk pudding, saffron, rose water, pistachio and crisp kataifi." data-fr="Crème de lait légère, safran, eau de rose, pistache et kadaïf croustillant.">
+                    Light milk pudding, saffron, rose water, pistachio and crisp kataifi.
+                  </p>
+                </div>
+                <strong class="menu-product__price">$8</strong>
+              </article>
+              <article class="menu-product" data-menu-product>
+                <div class="menu-product__copy">
+                  <div class="menu-product__title">
+                    <h4 data-en="Warm Knefeh Pan" data-fr="Poêlon de knefeh chaud">Warm Knefeh Pan</h4>
+                  </div>
+                  <p data-en="Akkawi cheese, semolina crust, orange blossom syrup and sesame bun." data-fr="Fromage akkawi, croûte de semoule, sirop à la fleur d'oranger et pain au sésame.">
+                    Akkawi cheese, semolina crust, orange blossom syrup and sesame bun.
+                  </p>
+                </div>
+                <strong class="menu-product__price">$10</strong>
+              </article>
+              <article class="menu-product" data-menu-product>
+                <div class="menu-product__copy">
+                  <div class="menu-product__title">
+                    <h4 data-en="Baklava Selection" data-fr="Sélection de baklavas">Baklava Selection</h4>
+                  </div>
+                  <p data-en="Four house pieces with pistachio, walnut and orange blossom." data-fr="Quatre pièces maison à la pistache, aux noix et à la fleur d'oranger.">
+                    Four house pieces with pistachio, walnut and orange blossom.
+                  </p>
+                </div>
+                <strong class="menu-product__price">$9</strong>
+              </article>
+            </div>
+          </section>
+
+          <section class="menu-category menu-category--accent reveal" id="fresh-juices" data-category-section="fresh-juices">
+            <header class="menu-category__header">
+              <span class="menu-category__number">07</span>
+              <div>
+                <p data-en="Pressed to order" data-fr="Pressés à la minute">Pressed to order</p>
+                <h3 data-en="Fresh Juices" data-fr="Jus frais">Fresh Juices</h3>
+              </div>
+              <span class="menu-category__count" data-en="5 items" data-fr="5 produits">5 items</span>
+            </header>
+            <div class="menu-products">
+              <article class="menu-product" data-menu-product>
+                <div class="menu-product__copy">
+                  <div class="menu-product__title">
+                    <h4 data-en="Fresh Orange Juice" data-fr="Jus d'orange frais">Fresh Orange Juice</h4>
+                    <span class="product-badge" data-en="Fresh" data-fr="Frais">Fresh</span>
+                  </div>
+                  <p data-en="100% freshly squeezed oranges, served over ice on request." data-fr="Oranges pressées minute à 100 %, servies avec glace sur demande.">
+                    100% freshly squeezed oranges, served over ice on request.
+                  </p>
+                </div>
+                <strong class="menu-product__price">$5</strong>
+              </article>
+              <article class="menu-product" data-menu-product>
+                <div class="menu-product__copy">
+                  <div class="menu-product__title">
+                    <h4 data-en="Pomegranate Juice" data-fr="Jus de grenade">Pomegranate Juice</h4>
+                  </div>
+                  <p data-en="Fresh pomegranate, pressed to order with no added sugar." data-fr="Grenade fraîche pressée à la minute, sans sucre ajouté.">
+                    Fresh pomegranate, pressed to order with no added sugar.
+                  </p>
+                </div>
+                <strong class="menu-product__price">$6</strong>
+              </article>
+              <article class="menu-product" data-menu-product>
+                <div class="menu-product__copy">
+                  <div class="menu-product__title">
+                    <h4 data-en="Mango Juice" data-fr="Jus de mangue">Mango Juice</h4>
+                  </div>
+                  <p data-en="Ripe mango blended smooth with chilled water and lime." data-fr="Mangue mûre mixée avec de l'eau fraîche et du citron vert.">
+                    Ripe mango blended smooth with chilled water and lime.
+                  </p>
+                </div>
+                <strong class="menu-product__price">$6</strong>
+              </article>
+              <article class="menu-product" data-menu-product>
+                <div class="menu-product__copy">
+                  <div class="menu-product__title">
+                    <h4 data-en="Mint Lemonade" data-fr="Citronnade à la menthe">Mint Lemonade</h4>
+                  </div>
+                  <p data-en="Fresh lemon, mint leaves, crushed ice and light cane sugar." data-fr="Citron frais, feuilles de menthe, glace pilée et sucre de canne léger.">
+                    Fresh lemon, mint leaves, crushed ice and light cane sugar.
+                  </p>
+                </div>
+                <strong class="menu-product__price">$5</strong>
+              </article>
+              <article class="menu-product menu-product--photo" data-menu-product>
+                <img src="assets/images/rose-lemonade.webp" alt="Rose lemonade with mint" data-alt-en="Rose lemonade with mint" data-alt-fr="Citronnade rose à la menthe" loading="lazy" />
+                <div class="menu-product__copy">
+                  <div class="menu-product__title">
+                    <h4 data-en="Rose Lemonade" data-fr="Citronnade à la rose">Rose Lemonade</h4>
+                    <span class="product-badge" data-en="JaFood special" data-fr="Spécialité JaFood">JaFood special</span>
+                  </div>
+                  <p data-en="Fresh lemon, rose water, mint and crushed ice." data-fr="Citron frais, eau de rose, menthe et glace pilée.">
+                    Fresh lemon, rose water, mint and crushed ice.
+                  </p>
+                </div>
+                <strong class="menu-product__price">$6</strong>
+              </article>
+            </div>
+          </section>
+
+          <section class="menu-category reveal" id="hot-drinks" data-category-section="hot-drinks">
+            <header class="menu-category__header">
+              <span class="menu-category__number">08</span>
+              <div>
+                <p data-en="Coffee & tea" data-fr="Café & thé">Coffee & tea</p>
+                <h3 data-en="Hot Drinks" data-fr="Boissons chaudes">Hot Drinks</h3>
+              </div>
+              <span class="menu-category__count" data-en="4 items" data-fr="4 produits">4 items</span>
+            </header>
+            <div class="menu-products">
+              <article class="menu-product" data-menu-product>
+                <div class="menu-product__copy">
+                  <div class="menu-product__title">
+                    <h4 data-en="Lebanese Coffee" data-fr="Café libanais">Lebanese Coffee</h4>
+                  </div>
+                  <p data-en="Traditional dark-roast coffee, plain or lightly sweetened." data-fr="Café traditionnel à torréfaction foncée, nature ou légèrement sucré.">
+                    Traditional dark-roast coffee, plain or lightly sweetened.
+                  </p>
+                </div>
+                <strong class="menu-product__price">$3.5</strong>
+              </article>
+              <article class="menu-product" data-menu-product>
+                <div class="menu-product__copy">
+                  <div class="menu-product__title"><h4 data-en="Espresso" data-fr="Espresso">Espresso</h4></div>
+                  <p data-en="Single origin espresso, short and balanced." data-fr="Espresso d'origine unique, court et équilibré.">Single origin espresso, short and balanced.</p>
+                </div>
+                <strong class="menu-product__price">$3</strong>
+              </article>
+              <article class="menu-product" data-menu-product>
+                <div class="menu-product__copy">
+                  <div class="menu-product__title"><h4 data-en="Cappuccino" data-fr="Cappuccino">Cappuccino</h4></div>
+                  <p data-en="Espresso, steamed milk and a fine layer of foam." data-fr="Espresso, lait chaud et fine couche de mousse.">Espresso, steamed milk and a fine layer of foam.</p>
+                </div>
+                <strong class="menu-product__price">$4</strong>
+              </article>
+              <article class="menu-product" data-menu-product>
+                <div class="menu-product__copy">
+                  <div class="menu-product__title">
+                    <h4 data-en="Fresh Mint Tea" data-fr="Thé à la menthe fraîche">Fresh Mint Tea</h4>
+                    <span class="diet-dot" title="Vegan">VG</span>
+                  </div>
+                  <p data-en="Black tea, fresh mint and sugar served on the side." data-fr="Thé noir, menthe fraîche et sucre servi à part.">
+                    Black tea, fresh mint and sugar served on the side.
+                  </p>
+                </div>
+                <strong class="menu-product__price">$3</strong>
+              </article>
+            </div>
+          </section>
+
+          <div class="menu-legend reveal">
+            <div><span class="diet-dot">V</span><span data-en="Vegetarian" data-fr="Végétarien">Vegetarian</span></div>
+            <div><span class="diet-dot">VG</span><span data-en="Vegan" data-fr="Végétalien">Vegan</span></div>
+            <p data-en="Please tell our team about any allergy or dietary requirement before ordering." data-fr="Veuillez informer notre équipe de toute allergie ou exigence alimentaire avant de commander.">
+              Please tell our team about any allergy or dietary requirement before ordering.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="reservation" id="reservation" aria-labelledby="reservation-title">
+        <div class="reservation__content reveal">
+          <p class="overline" data-en="Online reservations" data-fr="Réservations en ligne">Online reservations</p>
+          <h2 id="reservation-title" data-en="Your table in Hamra is waiting." data-fr="Votre table à Hamra vous attend.">
+            Your table in Hamra is waiting.
+          </h2>
+          <p data-en="Send your preferred date and time. The JaFood team will contact you to confirm availability." data-fr="Envoyez la date et l'heure souhaitées. L'équipe JaFood vous contactera pour confirmer la disponibilité.">
+            Send your preferred date and time. The JaFood team will contact you to confirm availability.
+          </p>
+          <div class="reservation__facts">
+            <div><span data-en="Service" data-fr="Service">Service</span><strong>12:00 — 00:00</strong></div>
+            <div><span data-en="Address" data-fr="Adresse">Address</span><strong>Hamra, Beirut</strong></div>
+            <div><span data-en="Large groups" data-fr="Grands groupes">Large groups</span><strong data-en="Add a note" data-fr="Ajoutez une note">Add a note</strong></div>
+          </div>
+        </div>
+
+        <form class="reservation-form reveal" id="reservation-form" data-delay="100" novalidate>
+          <div class="reservation-form__head">
+            <div>
+              <span data-en="Reservation request" data-fr="Demande de réservation">Reservation request</span>
+              <h3 data-en="Tell us about your table" data-fr="Parlez-nous de votre table">Tell us about your table</h3>
+            </div>
+            <span class="form-step">01 / 01</span>
+          </div>
+
+          <div class="form-grid">
+            <label class="field">
+              <span data-en="Full name" data-fr="Nom complet">Full name</span>
+              <input type="text" name="name" autocomplete="name" required minlength="2" placeholder="Your name" data-placeholder-en="Your name" data-placeholder-fr="Votre nom" />
+              <small data-error-for="name"></small>
+            </label>
+            <label class="field">
+              <span data-en="Phone number" data-fr="Numéro de téléphone">Phone number</span>
+              <input type="tel" name="phone" autocomplete="tel" required inputmode="tel" placeholder="+961 …" data-placeholder-en="+961 …" data-placeholder-fr="+961 …" />
+              <small data-error-for="phone"></small>
+            </label>
+            <label class="field">
+              <span data-en="Email address" data-fr="Adresse e-mail">Email address</span>
+              <input type="email" name="email" autocomplete="email" required placeholder="you@example.com" data-placeholder-en="you@example.com" data-placeholder-fr="vous@exemple.com" />
+              <small data-error-for="email"></small>
+            </label>
+            <label class="field">
+              <span data-en="Guests" data-fr="Personnes">Guests</span>
+              <select name="guests" required>
+                <option value="" disabled selected data-en="Select guests" data-fr="Choisir">Select guests</option>
+                <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                <option value="7">7</option><option value="8">8</option><option value="9+">9+</option>
+              </select>
+              <small data-error-for="guests"></small>
+            </label>
+            <label class="field">
+              <span data-en="Date" data-fr="Date">Date</span>
+              <input type="date" name="date" required />
+              <small data-error-for="date"></small>
+            </label>
+            <label class="field">
+              <span data-en="Time" data-fr="Heure">Time</span>
+              <select name="time" required>
+                <option value="" disabled selected data-en="Select a time" data-fr="Choisir l'heure">Select a time</option>
+                <option value="12:00">12:00</option><option value="12:30">12:30</option>
+                <option value="13:00">13:00</option><option value="13:30">13:30</option>
+                <option value="14:00">14:00</option><option value="18:00">18:00</option>
+                <option value="18:30">18:30</option><option value="19:00">19:00</option>
+                <option value="19:30">19:30</option><option value="20:00">20:00</option>
+                <option value="20:30">20:30</option><option value="21:00">21:00</option>
+                <option value="21:30">21:30</option><option value="22:00">22:00</option>
+                <option value="22:30">22:30</option><option value="23:00">23:00</option>
+              </select>
+              <small data-error-for="time"></small>
+            </label>
+            <label class="field field--full">
+              <span data-en="Notes (optional)" data-fr="Notes (facultatif)">Notes (optional)</span>
+              <textarea name="notes" rows="3" maxlength="300" placeholder="Allergies, occasion, table preference…" data-placeholder-en="Allergies, occasion, table preference…" data-placeholder-fr="Allergies, occasion, préférence de table…"></textarea>
+            </label>
+          </div>
+
+          <label class="consent">
+            <input type="checkbox" name="consent" required />
+            <span data-en="I agree to be contacted about this reservation request." data-fr="J'accepte d'être contacté(e) au sujet de cette demande de réservation.">
+              I agree to be contacted about this reservation request.
+            </span>
+          </label>
+          <small class="consent-error" data-error-for="consent"></small>
+
+          <button class="button button--primary submit-button" type="submit">
+            <span data-submit-label data-en="Send reservation request" data-fr="Envoyer la demande">Send reservation request</span>
+            <span aria-hidden="true">↗</span>
+          </button>
+          <p class="form-note" data-en="Your booking is confirmed only after the JaFood team contacts you." data-fr="Votre réservation est confirmée uniquement après le retour de l'équipe JaFood.">
+            Your booking is confirmed only after the JaFood team contacts you.
+          </p>
+          <div class="form-status" id="form-status" role="status" aria-live="polite" hidden></div>
+        </form>
+      </section>
+
+      <section class="location" id="location" aria-labelledby="location-title">
+        <div class="location__number" aria-hidden="true">33.8960° N</div>
+        <div class="location__content reveal">
+          <p class="overline overline--dark" data-en="Find JaFood" data-fr="Trouver JaFood">Find JaFood</p>
+          <h2 id="location-title" data-en="Meet us in Hamra." data-fr="Retrouvez-nous à Hamra.">Meet us in Hamra.</h2>
+          <p data-en="In the heart of Beirut's most energetic neighborhood, open every day for lunch and dinner." data-fr="Au cœur du quartier le plus vivant de Beyrouth, ouvert tous les jours pour le déjeuner et le dîner.">
+            In the heart of Beirut's most energetic neighborhood, open every day for lunch and dinner.
+          </p>
+        </div>
+        <div class="location__actions reveal" data-delay="100">
+          <address><strong>JaFood</strong><span>Hamra, Beirut · Lebanon</span><span>12:00 — 00:00</span></address>
+          <a class="button button--dark" href="https://www.google.com/maps/search/?api=1&query=Hamra%2C%20Beirut%2C%20Lebanon" target="_blank" rel="noopener noreferrer" data-en="Open in Maps" data-fr="Ouvrir dans Maps">
+            Open in Maps
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <span class="brand__mark" aria-hidden="true">JF</span>
+        <div><strong>JaFood</strong><span data-en="Contemporary Lebanese dining" data-fr="Cuisine libanaise contemporaine">Contemporary Lebanese dining</span></div>
+      </div>
+      <p>© <span id="current-year"></span> JaFood · Hamra, Beirut</p>
+      <a href="#top" data-en="Back to top ↑" data-fr="Retour en haut ↑">Back to top ↑</a>
+    </footer>
+
+    <a class="mobile-booking" href="#reservation">
+      <span data-en="Book a table" data-fr="Réserver une table">Book a table</span>
+      <span aria-hidden="true">↗</span>
+    </a>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
