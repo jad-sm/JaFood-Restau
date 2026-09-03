@@ -1,8 +1,0 @@
-JAFOOD PROFESSIONAL V2
-
-1. Open index.html to view the website.
-2. English is the default language; use EN / FR to translate it.
-3. Edit products and categories directly in index.html.
-4. Add new photos inside assets/images.
-5. Reservations already open WhatsApp to +961 76 545 146.
-6. Read README.md for full editing and publishing instructions.
