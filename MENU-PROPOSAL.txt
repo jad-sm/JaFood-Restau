@@ -1,0 +1,51 @@
+JAFOOD — PROPOSED OPENING MENU
+Hamra, Beirut
+
+This menu is already integrated into index.html in English and French.
+Prices are proposed in USD and should be reviewed before commercial opening.
+
+01 — BREAKFAST & BRUNCH
+Lebanese Breakfast Board ................ $18
+Zaatar & Labneh Manoushe ................. $7
+Beiruti Shakshuka ........................ $11
+
+02 — COLD MEZZE
+JaFood Hummus ............................ $8
+Smoked Moutabal .......................... $8.5
+Garden Tabbouleh ......................... $9
+Pomegranate Fattoush ..................... $9
+
+03 — HOT MEZZE
+Truffle Rakakat .......................... $10
+Kibbeh Bites ............................. $11
+Batata Harra ............................. $8
+Grilled Halloumi ......................... $12
+
+04 — GRILLS & MAINS
+Charcoal Tawook .......................... $18
+Hamra Kafta .............................. $19
+JaFood Mixed Grill ....................... $25
+Sumac Lamb Chops ......................... $27
+
+05 — SANDWICHES
+Tawook Saj Wrap .......................... $11
+Crisp Kafta Arayes ....................... $12
+Halloumi Green Wrap ...................... $10
+
+06 — DESSERTS
+Mouhallabieh Cloud ....................... $8
+Warm Knefeh Pan .......................... $10
+Baklava Selection ....................... $9
+
+07 — FRESH JUICES
+Fresh Orange Juice ....................... $5
+Pomegranate Juice ........................ $6
+Mango Juice .............................. $6
+Mint Lemonade ............................ $5
+Rose Lemonade ............................ $6
+
+08 — HOT DRINKS
+Lebanese Coffee .......................... $3.5
+Espresso ................................. $3
+Cappuccino ............................... $4
+Fresh Mint Tea ........................... $3
